@@ -1,34 +1,32 @@
 #include<stdio.h>
 #include<stdbool.h>
- int main()
+int main()
 {
   int i, n, key;
-printf("Enter the size of array\n");
-scanf("%d",&n);
-int arr[n];
-printf("Enter the elements in array\n");
-for (i=0, i<n, i++)
+  printf("Enter the size of array\n");
+  scanf("%d", &n);
+  int arr[n];
+  printf("Enter the elements in array\n");
+  for (i = 0; i < n; i++)
   {
-  scanf("%d, &arr[i]);
+    scanf("%d", &arr[i]);
   }
   printf("Enter the value to be searched\n");
-scanf("%d", &key);
-bool flag;
-flag=false;
-for (i=0,i<n,i++)
+  scanf("%d", &key);
+  bool flag;
+  flag = false;
+  for (i = 0; i < n; i++)
   {
-  if (arr [i]=key
-  {
-    printf("Element found at position %d, %d\n, arr[i]);
-    flag=true;
-    break;
+    if (arr[i] == key)
+    {
+      printf("Element found at position %d, %d\n", i, arr[i]);
+      flag = true;
+      break;
     }
-    if (flag)
-{
-printf("Element not found");
+  }
+  if (!flag)
+  {
+    printf("Element not found\n");
+  }
+  return 0;
 }
-return 0;
- }
-}
-  
-  
